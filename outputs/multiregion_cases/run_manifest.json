@@ -1,0 +1,35 @@
+{
+  "checkpoint": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\MedSAM2\\checkpoints\\MedSAM2_latest.pt",
+  "config": "configs/sam2.1_hiera_t512.yaml",
+  "normalization": "percentile_0.5_99.5",
+  "initialization_strategy": "largest-area non-empty expert slice; one tight oracle box per volume",
+  "subjects_and_target_slices": {
+    "sub-050": [
+      6,
+      53,
+      54
+    ],
+    "sub-066": [
+      6,
+      57,
+      59
+    ],
+    "sub-086": [
+      6,
+      53,
+      55
+    ],
+    "sub-109": [
+      6,
+      54,
+      56
+    ],
+    "sub-112": [
+      4,
+      54,
+      56
+    ]
+  },
+  "previous_project_root": "C:\\Users\\esteb\\Projects\\Imaging\\Rodent-Skull-Stripping-Research",
+  "output_dir": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\outputs\\multiregion_cases"
+}

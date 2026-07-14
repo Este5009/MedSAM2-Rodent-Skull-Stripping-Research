@@ -1,0 +1,4 @@
+2026-07-14 15:07:01,668 | INFO | Selected sub-001 | image=C:\Users\esteb\Projects\Imaging\MedSAM2-Rodent-Skull-Stripping-Research\Image_Database\CAMRI Rat Brain MRI Data\sub-001\ses-1\anat\sub-001_ses-1_acq-RARE_T2w.nii.gz | mask=C:\Users\esteb\Projects\Imaging\MedSAM2-Rodent-Skull-Stripping-Research\Mask_Database\RodentBrainMask\CAMRI Rat\CAMRI_Rat-sub-001_ses-1_acq-RARE_T2w_061.nii.gz
+2026-07-14 15:07:13,871 | INFO | shape_zyx=(12, 256, 256) spacing_xyz=(0.10000000149011612, 0.10000000149011612, 1.0) init_z=3 box_xyxy=[52.0, 90.0, 211.0, 190.0]
+2026-07-14 15:07:13,871 | INFO | normalization=percentile applied=percentile fallback=False
+2026-07-14 15:07:13,871 | INFO | Dice=0.934483 IoU=0.877023 runtime=2.14s peak_cuda=447.1 MiB GIF=saved comparison=False

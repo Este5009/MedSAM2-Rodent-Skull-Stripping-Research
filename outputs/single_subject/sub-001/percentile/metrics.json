@@ -1,0 +1,92 @@
+{
+  "subject_id": "sub-001",
+  "image_path": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\Image_Database\\CAMRI Rat Brain MRI Data\\sub-001\\ses-1\\anat\\sub-001_ses-1_acq-RARE_T2w.nii.gz",
+  "mask_path": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\Mask_Database\\RodentBrainMask\\CAMRI Rat\\CAMRI_Rat-sub-001_ses-1_acq-RARE_T2w_061.nii.gz",
+  "checkpoint": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\MedSAM2\\checkpoints\\MedSAM2_latest.pt",
+  "config": "configs/sam2.1_hiera_t512.yaml",
+  "array_shape_zyx": [
+    12,
+    256,
+    256
+  ],
+  "image_geometry": {
+    "size_xyz": [
+      256,
+      256,
+      12
+    ],
+    "spacing_xyz": [
+      0.10000000149011612,
+      0.10000000149011612,
+      1.0
+    ],
+    "origin_xyz": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "direction": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  "initialization_slice": 3,
+  "oracle_box_xyxy_original": [
+    52.0,
+    90.0,
+    211.0,
+    190.0
+  ],
+  "oracle_box_xyxy_model_512": [
+    104.0,
+    180.0,
+    422.0,
+    380.0
+  ],
+  "normalization_requested": "percentile",
+  "normalization_applied": "percentile",
+  "normalization": {
+    "foreground_definition": "finite and image != 0",
+    "foreground_voxel_count": 786432,
+    "clip_percentiles": [
+      0.5,
+      99.5
+    ],
+    "final_clipping_limits": [
+      75.0,
+      20898.0
+    ],
+    "output_range": [
+      0,
+      255
+    ],
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "volumetric_dice": 0.9344826785728103,
+  "volumetric_iou": 0.8770225127087872,
+  "nonempty_slice_dice": {
+    "mean": 0.9337985055053936,
+    "median": 0.9428788532898792,
+    "minimum": 0.8651738361814968,
+    "maximum": 0.9561093185087276
+  },
+  "empty_predictions_on_nonempty_ground_truth_slices": 0,
+  "false_positive_predictions_on_empty_ground_truth_slices": 0,
+  "predicted_foreground_voxels": 122426,
+  "ground_truth_foreground_voxels": 136040,
+  "false_positive_voxels": 1660,
+  "false_negative_voxels": 15274,
+  "internal_enclosed_hole_area": 3261,
+  "runtime_seconds": 2.142324599903077,
+  "peak_cuda_memory_mb": 447.07763671875,
+  "device": "NVIDIA GeForce GTX 1650",
+  "gif": "saved"
+}
