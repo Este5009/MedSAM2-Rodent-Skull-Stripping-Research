@@ -1,0 +1,21 @@
+{
+  "experiment": "oracle_every_slice",
+  "created_utc": "2026-07-14T20:54:46.562034+00:00",
+  "git_commit": "47a4b833718213396a55c7d5e2f1abd21616166d",
+  "subjects": [
+    "sub-050",
+    "sub-066",
+    "sub-086",
+    "sub-109",
+    "sub-112"
+  ],
+  "checkpoint": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\MedSAM2\\checkpoints\\MedSAM2_latest.pt",
+  "config": "configs/sam2.1_hiera_t512.yaml",
+  "device": "NVIDIA GeForce GTX 1650",
+  "torch": "2.5.1+cu124",
+  "preprocessing": "whole-volume finite/nonzero 0.5-99.5 percentile clipping to uint8",
+  "independent_method": "SAM2ImagePredictor.set_image + predict per non-empty slice",
+  "shared_method": "one NPZ video inference state; add all non-empty boxes in z order before bidirectional propagation",
+  "official_api_semantics": "Prompted frames are conditioning frames reused during propagation; memory can only alter unprompted slices in this official interaction pattern.",
+  "output_dir": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\outputs\\oracle_every_slice"
+}

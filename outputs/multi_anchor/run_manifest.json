@@ -1,0 +1,21 @@
+{
+  "checkpoint": "C:\\Users\\esteb\\Projects\\Imaging\\MedSAM2-Rodent-Skull-Stripping-Research\\MedSAM2\\checkpoints\\MedSAM2_latest.pt",
+  "config": "configs/sam2.1_hiera_t512.yaml",
+  "normalization": "percentile 0.5-99.5",
+  "conditions": [
+    "single_anchor",
+    "three_fixed_anchors",
+    "adaptive_oracle",
+    "three_anchor_multibox_oracle"
+  ],
+  "fixed_anchor_logic": "20th percentile non-empty, maximum-area, 80th percentile non-empty",
+  "adaptive_target_dice": 0.9,
+  "adaptive_max_anchors": 7,
+  "subjects": [
+    "sub-050",
+    "sub-066",
+    "sub-086",
+    "sub-109",
+    "sub-112"
+  ]
+}
